@@ -4,13 +4,13 @@ import Modal from "../common/Modal";
 import Title from "../common/Title";
 import TabContentContainer from "../common/tabs/TabContentContainer";
 import Tabs from "../common/tabs/Tabs";
-import ProductCard, { IProduct } from "../home/productsRow/ProductCard";
+import ProductCard, { IWork } from "../home/productsRow/ProductCard";
 import ProductDetailCard from "./ProductDetailCard";
 
 export default function ProductsMain() {
   const [activeTab, setActiveTab] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState<IProduct | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<IWork | null>(null);
 
   function renderActiveTab() {
     if (activeTab === 1) {
@@ -24,7 +24,7 @@ export default function ProductsMain() {
             {objProducts.electroMechanicWarpStopMotions.map((item, index) => (
               <ProductCard
                 key={index}
-                objProduct={item}
+                objWork={item}
                 setIsOpen={setIsOpen}
                 setSelectedProduct={setSelectedProduct}
               />
@@ -41,7 +41,7 @@ export default function ProductsMain() {
             {objProducts.serratedBars.map((item, index) => (
               <ProductCard
                 key={index}
-                objProduct={item}
+                objWork={item}
                 setIsOpen={setIsOpen}
                 setSelectedProduct={setSelectedProduct}
               />
@@ -58,7 +58,7 @@ export default function ProductsMain() {
             {objProducts.dropPins.map((item, index) => (
               <ProductCard
                 key={index}
-                objProduct={item}
+                objWork={item}
                 setIsOpen={setIsOpen}
                 setSelectedProduct={setSelectedProduct}
               />
@@ -75,7 +75,7 @@ export default function ProductsMain() {
           {objProducts.electricalContactBars.map((item, index) => (
             <ProductCard
               key={index}
-              objProduct={item}
+              objWork={item}
               setIsOpen={setIsOpen}
               setSelectedProduct={setSelectedProduct}
             />

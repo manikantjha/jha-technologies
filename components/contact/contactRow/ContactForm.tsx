@@ -2,7 +2,7 @@
 import Button from "@/components/common/Button";
 import Card from "@/components/common/Card";
 import Modal from "@/components/common/Modal";
-import { IProduct } from "@/components/home/productsRow/ProductCard";
+import { IWork } from "@/components/home/productsRow/ProductCard";
 import { sendContactForm } from "@/services/api";
 import { IContactForm } from "@/types/contact";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -26,7 +26,7 @@ const schema = yup
   .required();
 
 interface IContactFormProps {
-  objProduct?: IProduct;
+  objProduct?: IWork;
   setIsOpen?: Dispatch<SetStateAction<boolean>>;
 }
 
