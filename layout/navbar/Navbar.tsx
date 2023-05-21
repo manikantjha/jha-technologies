@@ -33,7 +33,7 @@ export default function Navbar() {
           </div>
           <button
             type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-white rounded-full md:hidden"
+            className="inline-flex items-center p-2 ml-3 text-sm text-primary rounded-full md:hidden"
             onClick={() => setIsOpen((open) => !open)}
           >
             <svg
