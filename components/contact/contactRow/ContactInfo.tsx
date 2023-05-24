@@ -22,7 +22,7 @@ export default function ContactInfo() {
           <div className="flex">
             <a
               aria-label="Chat on WhatsApp"
-              href="https://wa.me/919737259259"
+              href="https://wa.me/918141952955"
               className="block mt-1"
             >
               <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenSmall.svg" />
